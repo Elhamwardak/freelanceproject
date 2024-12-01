@@ -1,0 +1,35 @@
+{% extends 'base.html' %} 
+
+{% block body %}
+
+<h1 class="text-center mt-5">{{ section.title }} Section</h1>
+
+<div class="container-fluid d-flex justify-content-center px-0">
+    <div class="row section_product_cards px-0">
+      
+        {% if cards %}
+            {% for card in cards %}
+            <div class="col-md-4">
+                <!-- **** CARDS ***  -->
+                <figure class="Products_cards ps-0">
+                    {% if card.image %}
+                        <img src="{{ card.image.url }}" alt="{{ card.title }}">
+                    {% endif %}
+                    <figcaption class="col-12 px-3">
+                        <h2 class="my-3">{{ card.title }}</h2>
+                        <p>{{ card.body }}</p>
+                        {% if card.url %}
+                            <a href="{{ card.url }}">{{ card.urlName }}</a>
+                        {% endif %}
+                    </figcaption>
+                </figure>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p>No cards available for this section.</p>
+        {% endif %}
+        
+    </div>
+</div>
+
+{% endblock body %}

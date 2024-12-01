@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h5 {
+  font-family: heading;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: heading;
+  src: url(../fonts/heading.ttf);
+}
+a {
+  font-family: Eczar;
+  font-weight: 600;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+@font-face {
+  font-family: Eczar;
+  src: url(../fonts/Trocchi-Regular.ttf);
+}
+#BtnGoTop {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: #FAD110;
+  color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+#BtnGoTop.show {
+  animation: button infinite ease-in-out 1s;
+}
+
+@keyframes button {
+  to {
+    transform: translateY(-20px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+p {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+}/*# sourceMappingURL=normalize.css.map */

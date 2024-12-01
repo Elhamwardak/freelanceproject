@@ -1,0 +1,185 @@
+<!-- ===== START HEADER === -->
+<header id="header" class="d-flex justify-content-center">
+    <section class="header_menu_small_phone d-xl-none h-100 row align-items-center">
+
+        <!-- *** .header_menu_log ***  -->
+        <div class="header_menu_log h-100 col d-flex align-items-center px-0">
+            <img src="../static/img/logo_tackmaster.png" alt="">
+        </div>
+
+
+        <!-- *** .header_menu_Toggle ***  -->
+        <div class="header_menu_Toggle h-100 col d-flex align-items-center justify-content-end px-0">
+            <section id="Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </section>
+        </div>
+
+        <!-- *** .header_menu_NavLinks ***  -->
+        <nav class="header_menu_NavLinks">
+
+
+            <!-- ***** .header_logo *****  -->
+            <div class="header_menu_log header_logo my-3 d-flex justify-content-center">
+                <img src="../static/img/logo_tackmaster.png" alt="">
+            </div>
+
+            <!-- ****===== BtnBackTbn **** ====  -->
+             <span id="BtnBack">⬅</span>
+            <!-- ****=====end of BtnBackTbn **** ====  -->
+
+            <!-- **** .header_menu_NavLinks_Item ****  -->
+            <div class="header_menu_NavLinks_Item">
+
+                <!-- ***** Humbarger ****  -->
+                <section class="d-flex justify-content-end p-1 align-items-center">
+                    <span id="Humbarger"> Menu ≡</span>
+                </section>
+
+
+                <!-- ***** header_menu_navbar ***  -->
+                    <ul class="navigationBar col-12 px-0">
+                        <li class="col"><a href="">home</a></li>
+                        <li class="col"><a href="">about</a></li>
+                        <li class="col DropMenu">pages ⬇
+                            <ul class="col-12 DropMenu_item px-0">
+                                <li><a href="{% url 'design-and-graphic' %}">Design and Graphic</a></li>
+                                <li><a href="{% url 'programming-and-development' %}">Programming and Development</a></li>
+                                <li><a href="{% url 'image-and-vedio' %}">Image and Video</a></li>
+                                <li><a href="{% url 'writing-and-translation' %}">Writing and Translation</a></li>
+                                <li><a href="{% url 'digital-marketers' %}">Digital Marketing</a></li>
+                            </ul>
+                        </li>
+                        <li class="col"><a href="">services</a></li>
+                        <li class="col"><a href="">blog</a></li>
+                        <li class="col"><a href="#section_Get_quote">contact</a></li>
+                    </ul>
+            </div>
+
+
+             <!-- ===== header_social === -->
+             <section class="col-12 header_social px-0 mt-4 d-flex justify-content-center">
+                <a href="" class="fs-5"><i class="bi bi-facebook facebook"></i></a>
+                <a href="" class="fs-5 mx-4"><i class="bi bi-instagram"></i></a>
+                <a href="" class="fs-5"><i class="bi bi-youtube"></i></a>
+                <a href="" class="fs-5 mx-4"><i class="bi bi-telegram"></i></a>
+            </section>  
+        </nav>
+    </section>
+    <!-- ***** end of .header_menu_small_phone *****  -->
+
+    <div class="container-fluid header_waper  h-100 d-none d-xl-flex px-0">
+        <div class="row h-100 w-100 px-0">
+
+
+            <!-- ===== header_social === -->
+            <section class="col-2 header_social px-0 d-flex align-items-center justify-content-center px-0">
+                <a href="" class="fs-5"><i class="bi bi-facebook"></i></a>
+                <a href="" class="fs-5 mx-4"><i class="bi bi-instagram"></i></a>
+                <a href="" class="fs-5"><i class="bi bi-youtube"></i></a>
+                <a href="" class="fs-5 mx-4"><i class="bi bi-telegram"></i></a>
+            </section>
+
+            <!-- ====== header_navbar =====  -->
+            <nav class="col-8 header_navbar">
+                <ul class="d-flex justify-content-center h-100 px-0">
+                    <li class="h-100 "><a href="{% url 'index' %}" class="d-flex align-items-center h-100">home</a></li>
+
+                    <li class="h-100 "><a href="{% url 'index' %}#section_about_makro" class="d-flex  align-items-center h-100">about</a></li>
+
+                    <li class="h-100 "><a href="" class="d-flex align-items-center h-100">services</a>
+                        <ul id="header_navbar_megaMenu">
+                            <li class="row col-12  px-0">
+                                <!-- === menu CARD 1 ====  -->
+                                <section class="col">
+                                    <h5 class="header_navbar_title mt-3"><a href="{% url 'design-and-graphic' %}">Design and Graphics</a></h5>
+                                    <ul class="header_navbar_item px-0">
+                                        <li><a href="{% url 'design-and-graphic' %}">logo designers</a></li>
+                                        <li><a href="{% url 'design-and-graphic' %}">website designers</a></li>
+                                        <li><a href="{% url 'design-and-graphic' %}">ui/ux designers</a></li>
+                                        <li><a href="{% url 'design-and-graphic' %}">Poster and Brochure</a></li>
+                                    </ul>
+                                </section>
+
+                                <!-- === menu CARD 2 ====  -->
+                                <section class="col">
+                                    <h5 class="header_navbar_title mt-3"><a href="{% url 'programming-and-development' %}">programming and Development</a></h5>
+                                    <ul class="header_navbar_item px-0">
+                                        <li><a href="{% url 'programming-and-development' %}">web developer</a></li>
+                                        <li><a href="{% url 'programming-and-development' %}">mobile app developers</a></li>
+                                        <li><a href="{% url 'programming-and-development' %}">cybersecurity specialists</a></li>
+                                    </ul>
+                                </section>
+
+
+                                <!-- === menu CARD 3 ====  -->
+                                <section class="col">
+                                    <h5 class="header_navbar_title mt-3"><a href="{% url 'image-and-vedio' %}">Image and Video</a></h5>
+                                    <ul class="header_navbar_item px-0">
+                                        <li><a href="{% url 'image-and-vedio' %}">video editors</a></li>
+                                        <li><a href="{% url 'image-and-vedio' %}">animators</a></li>
+                                        <li><a href="{% url 'image-and-vedio' %}">photographers</a></li>
+                                        <li><a href="{% url 'image-and-vedio' %}">video content creators</a></li>
+                                    </ul>
+                                </section>
+
+
+                                <!-- === menu CARD 4 ====  -->
+                                <section class="col">
+                                    <h5 class="header_navbar_title mt-3"><a href="{% url 'writing-and-translation' %}">Writing and Translation</a></h5>
+                                    <ul class="header_navbar_item px-0">
+                                        <li><a href="{% url 'writing-and-translation' %}">blog content writers</a></li>
+                                        <li><a href="{% url 'writing-and-translation' %}">copywriters</a></li>
+                                        <li><a href="{% url 'writing-and-translation' %}">translators</a></li>
+                                        <li><a href="{% url 'writing-and-translation' %}">editors</a></li>
+                                    </ul>
+                                </section>
+
+
+
+                                <!-- === menu CARD 5 ====  -->
+                                <section class="col">
+                                    <h5 class="header_navbar_title mt-3"><a href="{% url 'digital-marketers' %}">Digital Marketing</a></h5>
+                                    <ul class="header_navbar_item px-0">
+                                        <li><a href="{% url 'digital-marketers' %}">seo specialists</a></li>
+                                        <li><a href="{% url 'digital-marketers' %}">social media marketers</a></li>
+                                        <li><a href="{% url 'digital-marketers' %}">email marketers</a></li>
+                                    </ul>
+                                </section>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="header_navbar_logo"><a href="" class="d-flex justify-content-center">
+                        <img src="../static/img/logo_tackmaster.png" alt="" class="img-fluid">
+                         <!-- <strong class="text-white">marko b</strong> -->
+                    </a></li>
+
+                    <li class="h-100 "><a href="" class="d-flex align-items-center h-100">pages</a>
+                        <ul id="header_navbar_Dropmenu" class=" px-0">
+                            <li><a href="{% url 'design-and-graphic' %}">Design and Graphic</a></li>
+                            <li><a href="{% url 'programming-and-development' %}">Programming and Development</a></li>
+                            <li><a href="{% url 'image-and-vedio' %}">Image and Video</a></li>
+                            <li><a href="{% url 'writing-and-translation' %}">Writing and Translation</a></li>
+                            <li><a href="{% url 'digital-marketers' %}">Digital Marketing</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="h-100 "><a href="{% url 'index' %}#section_total_view" class="d-flex align-items-center h-100">blog</a></li>
+
+                    <li class="h-100 "><a href="{% url 'index' %}#section_Get_quote" class="d-flex align-items-center h-100">contact</a></li>
+                </ul>
+            </nav>
+
+
+            <!-- ========header_phone ==== -->
+            <section class="col-2 header_phone  d-flex align-items-center  justify-content-center px-0">
+                <span>1–688–688-94</span>
+            </section>
+        </div>
+    </div>
+</header>
+<!-- ===== END OF HEADER === -->

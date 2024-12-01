@@ -1,0 +1,30 @@
+library/__pycache__
+myapp/migrations/__pycache__
+myapp/__pycache__
+venv
+myvenv
+__pycache__
+
+# Python cache files
+*.pyc
+__pycache__/
+
+# Django database files
+db.sqlite3
+
+# Media files
+/media
+
+# Static files (if using collectstatic)
+staticfiles/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Virtual environment
+venv/
+env/
+.env/
